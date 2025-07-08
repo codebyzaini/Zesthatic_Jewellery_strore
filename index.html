@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zesthatic Jewellers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fffaf4;
+      color: #4b2e2e;
+      overflow-x: hidden;
+    }
+
+  .site-header {
+  background: rgba(23, 22, 22, 0.954);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.logo-title img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-title span {
+  color: #f7d179;
+  font-family: 'Cinzel', serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+
+    .header-content {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f7d179;
+      font-weight: bold;
+      font-family: 'Cinzel', serif;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: white;
+      background-color: #f7d179;
+      border-radius: 20px;
+    }
+
+    /* Hero Video */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #f7d179;
+      z-index: 2;
+      animation: fadeInUp 2s ease;
+    }
+
+    .hero-content h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 4rem;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    
+    .explore-btn {
+  margin-top: 500px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #f7d179;
+  color: #4b2e2e;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.explore-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translate(-50%, -40%); }
+      100% { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    /* Products */
+    .feature-products {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fffaf3;
+    }
+
+    .feature-products h2 {
+      font-size: 2.5rem;
+      color: #7a4e2f;
+      margin-bottom: 40px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 40px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #4b2e2e;
+    }
+
+    .product button {
+      background: linear-gradient(to right, #e6b980, #eacda3);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #4b2e2e;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .product button:hover {
+      background: linear-gradient(to right, #f3c07f, #f6e2b3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(to right, #3e2723, #4e342e);
+      color: #f7d179;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Cinzel', serif;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #f7d179;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-shadow: 0 0 5px #f7d179;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .product-container {
+        padding: 0 10px;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Navbar -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="assets\ww-removebg-preview.png" alt="Zesthatic Jewellers Logo" />
+        <span>Zesthatic Jewellers</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <video autoplay muted loop>
+      <source src="assetsjewellery-bg.mp4.mp4" type="video/mp4">
+      <img src="assets/about.jpg" alt="Jewellery showcase" />
+    </video>
+    <!-- <div class="hero-content">
+      <h1>Zesthatic Jewellers</h1> -->
+      <!-- <p>Welcome to the world of elegance and tradition</p>
+    </div> -->
+  </div>
+<div class="hero-content">
+
+  <button class="explore-btn" onclick="document.querySelector('.feature-products').scrollIntoView({ behavior: 'smooth' });">Explore</button>
+</div>
+
+  <!-- Featured Products -->
+  <section class="feature-products">
+    <h2>Our Featured Products</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="assets/1.jpg" alt="Golden Pink Baliyan">
+        <h3>Golden Pink Baliyan<br>Rs. 500</h3>
+        <button onclick="location.href='addtocart1.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/2.jpg" alt="Silver Pearls">
+        <h3>Silver Pearls Jhumkas<br>Rs. 400</h3>
+        <button onclick="location.href='addtocart2.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/4.jpg" alt="Gun Metal Grey">
+        <h3>Gun Metal Grey Jhumkas<br>Rs. 1500</h3>
+        <button onclick="location.href='addtocart4.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/3.jpg" alt="Chamkeli">
+        <h3>Chamkeli Baaliyan<br>Rs. 800</h3>
+        <button onclick="location.href='addtocart3.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/5.jpg" alt="Pearl Gold">
+        <h3>Pearl Gold Baby Jhumkas<br>Rs. 400</h3>
+        <button onclick="location.href='addtocart5.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/11.jpg" alt="Antique Gold">
+        <h3>Emerald Hoops<br>Rs. 1000</h3>
+        <button onclick="location.href='addtocart6.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/10.jpg" alt="Kundan Pearl">
+        <h3>Anmol White Jhumkas<br>Rs. 1500</h3>
+        <button onclick="location.href='addtocart7.html'">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="assets/8.jpg" alt="Rose Gold Tassel">
+        <h3>Heera Mandi Golden Jhumkas<br>Rs. 750</h3>
+        <button onclick="location.href='addtocart8.html'">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Zesthatic Jewellers. All Rights Reserved. | <a href="#">Privacy Policy</a>
+  </footer>
+</body>
+</html>

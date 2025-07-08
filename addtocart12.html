@@ -1,0 +1,212 @@
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add to Cart - Gold Pink Baaliyan</title>
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf4;
+      color: #fff;
+    }
+    .site-header {
+  background: rgba(23, 22, 22, 0.954);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.logo-title img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-title span {
+  color: #f7d179;
+  font-family: 'Cinzel', serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+
+    .header-content {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f7d179;
+      font-weight: bold;
+      font-family: 'Cinzel', serif;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: white;
+      background-color: #f7d179;
+      border-radius: 20px;
+    }
+
+ 
+    .product-page {
+      margin-left: 220px;
+      padding: 50px 30px;
+    }
+
+   
+    .product-detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid #2e2e2e;
+      border-radius: 15px;
+      padding: 25px;
+      gap: 30px;
+      box-shadow: 0 0 20px rgba(247, 209, 121, 0.1);
+    }
+
+
+  
+      
+    .product-detail-container img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #333;
+    }
+
+    .product-info {
+      max-width: 500px;
+    }
+
+    .product-info h2 {
+      font-family: 'Playfair Display', serif;
+      color: #f7d179; ;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .product-info button {
+      background: #f7d179;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 25px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .product-info button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .product-detail-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-page h1 {
+        font-size: 26px;
+        text-align: center;
+      }
+
+      .product-info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Header with Logo and Navbar -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="assets\ww-removebg-preview.png" alt="Zesthatic Jewellers Logo" />
+        <span>Zesthatic Jewellers</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!-- Product Page -->
+    <div class="product-page">
+        <h1>Golden chamkeli Chandbali</h1>
+        <div class="product-detail-container">
+            <img src="assets/14.jpg" alt="Golden chamkeli Chandbali">
+            <div class="product-info">
+                <h2>Chain Gold Jhumkas</h2>
+                <p><strong>Price:</strong> Rs.1500</p>
+                <p><strong>Description:</strong> A beautifully designed  Golden chamkeli Chandbali perfect for traditional and modern occasions.</p>
+                
+        
+       
+
+        
+        <!-- Buttons -->
+        <button onclick="window.location.href='thanks.html';">Proceed to Checkout</button>
+        <button onclick="window.location.href='products.html';">Go Back</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

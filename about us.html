@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Zesthatic Jewellers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('assets/about.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+   .site-header {
+  background: rgba(23, 22, 22, 0.954);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.logo-title img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-title span {
+  color: #f7d179;
+  font-family: 'Cinzel', serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+
+    .header-content {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f7d179;
+      font-weight: bold;
+      font-family: 'Cinzel', serif;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: white;
+      background-color: #f7d179;
+      border-radius: 20px;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-content {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      color: #f7d179;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #eee;
+      margin-bottom: 30px;
+    }
+
+    .go-back-btn {
+      background: #f7d179;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .go-back-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      text-align: center;
+      color: #f7d179;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #f7d179;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        padding: 20px;
+      }
+
+      .about-section h2 {
+        font-size: 28px;
+      }
+
+      .about-section p {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+   <!-- Header with Logo and Navbar -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="assets\ww-removebg-preview.png" alt="Zesthatic Jewellers Logo" />
+        <span>Zesthatic Jewellers</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <h2>About Zesthatic Jewellers</h2>
+      <p>
+        Welcome to Zesthatic Jewellers, where elegance meets tradition.  
+        We specialize in exquisite jewelry crafted with love and precision.  
+        From timeless pieces to modern designs, our collection is tailored to add sparkle to your life.  
+        Thank you for being part of our journey as we celebrate beauty, grace, and tradition!
+      </p>
+      <button class="go-back-btn" onclick="window.location.href='index.html';">← Go Back</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Zesthatic Jewellers. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
